@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADL Metal — Maestranza Industrial | Rancagua</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;900&family=Barlow+Condensed:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-chalk text-coal font-sans antialiased">
+
+    <!-- ── NAVBAR ── -->
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white border-b-[3px] border-rust">
+        <div class="max-w-6xl mx-auto px-6 h-[68px] flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#inicio" class="flex items-center no-underline">
+                <img src="public/img/logo.png" alt="ADL Metal Maestranza — Rancagua" class="h-[44px] w-auto block">
+            </a>
+
+            <!-- Desktop links -->
+            <ul class="hidden md:flex items-center gap-8 list-none">
+                <li><a href="#servicios"
+                        class="text-black hover:text-muted text-md font-semibold tracking-wide transition-colors no-underline">Servicios</a>
+                </li>
+                <li><a href="#nosotros"
+                        class="text-black hover:text-muted text-md font-semibold tracking-wide transition-colors no-underline">Nosotros</a>
+                </li>
+                <li><a href="#productos"
+                        class="text-[black hover:text-muted text-md font-semibold tracking-wide transition-colors no-underline">Trabajos</a>
+                </li>
+                <li><a href="#contacto"
+                        class="bg-rust hover:bg-rustd text-white text-md font-bold px-5 py-2.5 transition-colors no-underline">Cotizar</a>
+                </li>
+            </ul>
+
+            <!-- Hamburger -->
+            <button id="hamburger" class="md:hidden text-white text-2xl bg-transparent border-0 cursor-pointer p-1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile menu — bg-coal sólido igual que el nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-coal border-t border-white/10 px-6 pb-6 pt-2">
+            <a href="#servicios"
+                class="block text-[#B0B7C0] font-semibold text-[15px] py-3 border-b border-white/10 no-underline">Servicios</a>
+            <a href="#nosotros"
+                class="block text-[#B0B7C0] font-semibold text-[15px] py-3 border-b border-white/10 no-underline">Nosotros</a>
+            <a href="#productos"
+                class="block text-[#B0B7C0] font-semibold text-[15px] py-3 border-b border-white/10 no-underline">Trabajos</a>
+            <a href="#contacto"
+                class="block bg-rust text-white text-center font-bold text-[15px] py-3 mt-3 no-underline">Cotizar</a>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+
+    <section id="inicio" class="hero-bg mt-[68px] min-h-[calc(100vh-68px)] flex items-center relative">
+
+        ```
+        <!-- franja roja vertical -->
+        <div class="absolute left-0 top-0 bottom-0 w-[5px] bg-rust"></div>
+
+        <div class="max-w-6xl mx-auto px-6 py-20 w-full">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+                <!-- CONTENIDO -->
+                <div>
+
+                    <!-- eyebrow -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-rust/15 border border-rust/40 text-white text-xs font-bold tracking-[2px] uppercase px-4 py-1.5 mb-6">
+
+                        <span class="w-1.5 h-1.5 bg-white rounded-full"></span>
+
+                        Maestranza Industrial — Rancagua, Chile
+
+                    </div>
+
+                    <!-- headline -->
+                    <h1
+                        class="font-condensed font-black uppercase leading-[.95] text-white text-[clamp(48px,7vw,84px)] max-w-[700px] mb-6">
+
+                        Fabricación<br>
+                        y <span class="text-rust">Mecanizado</span><br>
+                        de Precisión
+
+                    </h1>
+
+                    <p class="text-[#9AA3AD] text-lg font-light leading-relaxed max-w-[500px] mb-10">
+
+                        Estructuras metálicas, mecanizado de piezas, soldadura especializada y reparación industrial.
+                        12 años sirviendo a la minería, energía y manufactura nacional.
+
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap gap-4">
+
+                        <a href="#contacto"
+                            class="inline-flex items-center gap-2.5 bg-rust hover:bg-rustd text-white font-bold text-md px-8 py-4 transition-colors no-underline">
+
+                            <i class="fa-solid fa-file-contract"></i>
+                            Solicitar cotización
+
+                        </a>
+
+                        <a href="#productos"
+                            class="inline-flex items-center gap-2.5 border border-white/30 hover:border-white hover:bg-white/5 text-white font-semibold text-md px-8 py-4 transition-colors no-underline">
+
+                            <i class="fa-solid fa-image"></i>
+                            Ver trabajos
+
+                        </a>
+
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="flex flex-wrap gap-12 mt-16 pt-10 border-t border-white/10">
+
+                        <div>
+                            <div class="font-condensed font-black text-[44px] text-rust leading-none">
+                                12+
+                            </div>
+
+                            <div class="text-[11px] font-semibold text-muted uppercase tracking-[1.5px] mt-1">
+                                Años de experiencia
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="font-condensed font-black text-[44px] text-white leading-none">
+                                500 m²
+                            </div>
+
+                            <div class="text-[11px] font-semibold text-muted uppercase tracking-[1.5px] mt-1">
+                                Planta en Rancagua
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IMAGEN -->
+                <div class="hidden lg:flex justify-center items-center">
+
+                    <div class="relative w-full max-w-[500px]">
+
+                        <!-- marco decorativo -->
+                        <div class="absolute -right-3 -bottom-3 w-full h-full border-2 border-rust/50"></div>
+
+                        <!-- imagen -->
+                        <div class="relative overflow-hidden bg-coal">
+
+                            <img src="./public/img/banner-1.jpg" alt="Maestranza Industrial ADL Metal"
+                                class="w-full h-[500px] object-cover">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ── SERVICIOS ── -->
+    <section id="servicios" class="bg-white py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap justify-between items-end gap-8 mb-14">
+                <div>
+                    <span class="text-rust text-[11px] font-bold tracking-[2.5px] uppercase">Lo que hacemos</span>
+                    <h2 class="font-condensed font-black text-[clamp(32px,4vw,52px)] uppercase leading-none mt-3">
+                        Servicios<br>Industriales</h2>
+                </div>
+                <p class="text-muted text-base leading-relaxed max-w-[480px]">
+                    Personal especializado y equipamiento completo para proyectos industriales de alta exigencia.
+                </p>
+            </div>
+            <!-- Grid de servicios: gap de 2px da el efecto de líneas separadoras -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 bg-white">
+                <!-- Card 1 -->
+                <div class="group hover:bg-white border-t-4 border-rust transition-all duration-200 p-10">
+                    <div
+                        class="w-[52px] h-[52px] bg-coal text-rust flex items-center justify-center text-2xl mb-6 bg-rust text-white">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <h3 class="font-condensed font-bold text-[22px] uppercase text-coal mb-3">Estructuras Metálicas</h3>
+                    <p class="text-black text-md leading-relaxed">Fabricación y suministro de estructuras a medida para
+                        planta, minería, energía y construcción industrial.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="group hover:bg-white border-t-4 border-rust transition-all duration-200 p-10">
+                    <div
+                        class="w-[52px] h-[52px] bg-coal text-rust flex items-center justify-center text-2xl mb-6 bg-rust text-white">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <h3 class="font-condensed font-bold text-[22px] uppercase text-coal mb-3">Mecanizado de Piezas</h3>
+                    <p class="text-black text-md leading-relaxed">Mecanizado de piezas y partes con tolerancias de
+                        precisión. Torneros calificados con maquinaria especializada.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="group hover:bg-white border-t-4 border-rust transition-all duration-200 p-10">
+                    <div
+                        class="w-[52px] h-[52px] bg-coal text-rust flex items-center justify-center text-2xl mb-6 bg-rust text-white">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="font-condensed font-bold text-[22px] uppercase text-coal mb-3">Reparación Industrial</h3>
+                    <p class="text-black text-md leading-relaxed">Recuperación y reparación de piezas especiales,
+                        equipos rotatorios y componentes críticos de planta.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="group hover:bg-white border-t-4 border-rust transition-all duration-200 p-10">
+                    <div
+                        class="w-[52px] h-[52px] bg-coal text-rust flex items-center justify-center text-2xl mb-6 bg-rust text-white">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <h3 class="font-condensed font-bold text-[22px] uppercase text-coal mb-3">Soldadura Calificada</h3>
+                    <p class="text-black text-md leading-relaxed">Maestros caldereros y soldadores calificados en acero
+                        estructural, inoxidable 316 y materiales especiales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── NOSOTROS ── -->
+    <section id="nosotros" class="bg-coal py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <!-- Texto -->
+                <div>
+                    <span class="text-blue-500 text-[11px] font-bold tracking-[2.5px] uppercase">Quiénes somos</span>
+                    <h2
+                        class="font-condensed font-black text-[clamp(32px,4vw,52px)] uppercase leading-none text-white mt-3 mb-8">
+                        Maestranza<br>ADL Metal</h2>
+                    <div class="text-[#9AA3AD] text-lg leading-relaxed font-light space-y-5">
+                        <p>Somos una empresa innovadora dedicada a la <strong
+                                class="text-white font-semibold">fabricación, reparación y suministro de estructuras
+                                metálicas</strong> y mecanizado de piezas, con más de 12 años de trayectoria en la
+                            industria nacional.</p>
+                        <p>Nuestra planta cuenta con <strong class="text-white font-semibold">500 m²</strong> de
+                            superficie, fácil acceso y amplios estacionamientos, ubicada en <strong
+                                class="text-white font-semibold">Av. República de Chile 0558, Local 1, Rancagua</strong>
+                            — a metros de la carretera panamericana, costado Oeste.</p>
+                        <p><strong class="text-white font-semibold">Personal especializado:</strong></p>
+                        <ul class="pl-5 space-y-1 list-disc">
+                            <li>Torneros de oficio</li>
+                            <li>Maestros en Calderería</li>
+                            <li>Soldadores calificados</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Clientes -->
+                <div>
+                    <p
+                        class="text-[16px] font-bold tracking-[2px] text-muted uppercase mb-7 pb-4 border-t border-white/10">
+                        Empresas que han confiado en nosotros</p>
+                    <div class="divide-y divide-white/5">
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">Codelco
+                                — DET, DVEN, DCH</span>
+                        </div>
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">Minera
+                                Los Pelambres</span>
+                        </div>
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">Fundición
+                                Talleres</span>
+                        </div>
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">MGYT
+                                S.A.</span>
+                        </div>
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">INDEPRO
+                                IP S.A.</span>
+                        </div>
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">SQM</span>
+                        </div>
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">Arauco</span>
+                        </div>
+                        <div class="flex items-center gap-4 py-4">
+                            <div class="w-2 h-2 bg-rust shrink-0"></div><span
+                                class="font-condensed text-[19px] text-white uppercase tracking-wide">CAP
+                                Acero</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- SLIDER DE EMPRESAS -->
+
+    <div class=" bg-white">
+
+        <!-- Ventana -->
+        <div class="overflow-hidden">
+
+            <!-- Pista -->
+            <div id="empresasSlider" class="flex items-center gap-8 whitespace-nowrap">
+
+                <!-- Logos / placeholders -->
+                <div class="empresa-logo"><img src="public/img/empresa-1.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-2.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-3.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-4.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-5.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-6.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-7.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-8.jpg" alt=""></div>
+
+                <!-- Copia para crear el efecto infinito -->
+                <div class="empresa-logo"><img src="public/img/empresa-1.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-2.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-3.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-4.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-5.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-6.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-7.jpg" alt=""></div>
+                <div class="empresa-logo"><img src="public/img/empresa-8.jpg" alt=""></div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ── TRABAJOS / PRODUCTOS ── -->
+    <section id="productos" class="bg-white py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap justify-between items-end gap-8 mb-12">
+                <div>
+                    <span class="text-rust text-[11px] font-bold tracking-[2.5px] uppercase">Historial de
+                        productos</span>
+                    <h2 class="font-condensed font-black text-[clamp(32px,4vw,52px)] uppercase leading-none mt-3">
+                        Productos<br>Industriales</h2>
+                </div>
+                <p class="text-muted text-base leading-relaxed max-w-[480px]">Una selección de productos fabricados y
+                    suministrados a las principales industrias del país.</p>
+            </div>
+            <!-- Lista en grid, separadores de 1px con bg-gray-200 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px">
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">01</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Reparación
+                        tuerca chancadores — Fundición Talleres</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">02</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Pasadores
+                        rejas cabina captación CT — División Ventana</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">03</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Compuertas
+                        acero inoxidable — Planta Filtro Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">04</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Cabina
+                        captación de ollas — División Ventanas</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">05</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Reparación
+                        alzador de ollas — Fundición Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">06</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Transportador
+                        de cadena, precipitadores electrostáticos — Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">07</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Cabezales
+                        y compuertas carros metaleros 60 ton. — Ferronor</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">08</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Pernos
+                        tensores — Estación de metro Almagro, Santiago</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">09</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Plataforma
+                        móvil — Fundición Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">10</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Defensa
+                        contra eje piñón — Convertidor Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">11</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Anillos
+                        disipadores 48" — Minera Los Pelambres</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">12</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">1.000
+                        ml barandas Tranque El Mauro — Los Pelambres</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">13</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Pescantes
+                        estaciones de bomba — Tranque El Mauro</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">14</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Escala
+                        de acceso fábrica de chocolates Los Trapenses</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">15</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Red
+                        alimentación concentrado de cobre — Fundición Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">16</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Bocinas
+                        de bronce — Convertidor Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">17</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Acumulador
+                        de aire — Codelco División El Teniente</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">18</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Zapatos
+                        chinos planta molienda — Codelco Chuquicamata</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">19</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Cuna
+                        chancador secundario — División El Teniente</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">20</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Trabajos
+                        acero inoxidable 316 — Planta Ácido PLG2, Caletones</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">21</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Cajones
+                        porta vigas chancadoras acero T-1 — MGYT S.A.</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">22</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Portones
+                        contra incendios y ventilación interior mina</span>
+                </div>
+                <div
+                    class="group bg-white hover:bg-coal transition-colors duration-150 flex items-start gap-3.5 px-7 py-6">
+                    <span
+                        class="font-condensed font-bold text-md text-rust shrink-0 pt-0.5 group-hover:text-white">23</span>
+                    <span
+                        class="text-md text-coal group-hover:text-white transition-colors duration-150 leading-relaxed">Estructuras
+                        Sub-Estación eléctrica Nuevo Nivel Mina Sewell</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SLIDER DE PRODUCTOS -->
+
+        <div class="relative mt-14">
+
+
+            <!-- Botón izquierda -->
+            <button onclick="moverSlider(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 z-10
+           bg-coal text-white w-10 h-10 rounded-full
+           hover:bg-rust transition">
+                &#10094;
+            </button>
+
+            <!-- contenido del slider -->
+            <div id="slider" class="flex gap-5 overflow-hidden px-12">
+
+                <img src="public/img/Productos-1-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-2-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-3-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-4-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-5-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-6-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-7-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-8-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-9-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-10-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-11-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-12-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-13-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-14-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-15-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-16-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-17-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-18-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-19-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-20-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-21-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-22-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-23-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-24-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+                <img src="public/img/Productos-25-ADL-METAL-Maestranza-Rancagua-.jpg" class="slider-img">
+
+            </div>
+
+            <!-- Botón derecha -->
+            <button onclick="moverSlider(1)" class="absolute right-2 top-1/2 -translate-y-1/2 z-10
+           bg-coal text-white w-10 h-10 rounded-full
+           hover:bg-rust transition">
+                &#10095;
+            </button>
+
+
+        </div>
+    </section>
+
+    <!-- ── CONTACTO ── -->
+    <section id="contacto" class="bg-coal py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-20">
+
+                <!-- Info -->
+                <div>
+                    <span class="text-white text-[11px] font-bold tracking-[2.5px] uppercase">Hablemos</span>
+                    <h2
+                        class="font-condensed font-black text-[clamp(32px,4vw,52px)] uppercase leading-none text-white mt-3 mb-4">
+                        Cotice su<br>Proyecto</h2>
+                    <p class="text-[#9AA3AD] text-base leading-relaxed mb-8">Envíenos sus especificaciones o planos y
+                        nuestro equipo responderá a la brevedad.</p>
+
+                    <div class="flex flex-col gap-7">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-11 h-11 bg-rust/15 border text-white flex items-center justify-center text-base shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1">Dirección
+                                </p>
+                                <p class="text-white text-[15px] leading-relaxed">Av. República de Chile 0558, Local
+                                    1<br>Rancagua, Región del O'Higgins</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-11 h-11 bg-rust/15 border text-white flex items-center justify-center text-base shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1">Correo</p>
+                                <p class="text-white text-[15px]">contacto@adlmetal.cl</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-11 h-11 bg-rust/15 border text-white flex items-center justify-center text-base shrink-0">
+                                <i class="fa-solid fa-map"></i>
+                            </div>
+                            <div>
+                                <p class="text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1">Referencia
+                                </p>
+                                <p class="text-white text-[15px] leading-relaxed">A metros de la panamericana, costado
+                                    Oeste.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa -->
+                    <div class="mt-8 border border-white/10 overflow-hidden">
+                        <iframe class="map-frame w-full h-[200px] block border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.599870427482!2d-70.7286832236667!3d-34.156577673117766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663437ad24968eb%3A0xd11c135e73695569!2sAv.%20Rep%C3%BAblica%20de%20Chile%20576-578%2C%20Rancagua%2C%20O'Higgins!5e0!3m2!1ses-419!2scl!4v1722377202919!5m2!1ses-419!2scl"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div>
+                    <div id="success-msg"
+                        class="hidden bg-green-900/20 border border-green-500/30 text-green-400 px-5 py-4 text-md font-semibold mb-5">
+                        <i class="fa-solid fa-circle-check mr-2"></i> Mensaje enviado. Nos comunicaremos pronto.
+                    </div>
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"
+                        class="flex flex-col gap-4">
+                        <!-- Web3Forms -->
+                        <input type="hidden" name="access_key" value="13cd1cce-d3b4-477f-82d9-6a2e123cd607">
+
+                        <input type="hidden" name="subject" value="Nueva solicitud de cotización - ADL Metal">
+
+                        <input type="hidden" name="from_name" value="Formulario web ADL Metal">
+
+                        <!-- Protección básica contra spam -->
+                        <input type="checkbox" name="botcheck" style="display:none">
+
+                        <!-- Nombre / Empresa -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1.5">
+                                    Nombre *
+                                </label>
+
+                                <input type="text" name="nombre" required placeholder="Su nombre"
+                                    class="w-full bg-coal border border-white/10 focus:border-rust text-white placeholder-white/20 px-4 py-3 text-md outline-none transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1.5">
+                                    Empresa
+                                </label>
+
+                                <input type="text" name="empresa" placeholder="Razón social o faena"
+                                    class="w-full bg-coal border border-white/10 focus:border-rust text-white placeholder-white/20 px-4 py-3 text-md outline-none transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- Correo / Teléfono -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1.5">
+                                    Correo *
+                                </label>
+
+                                <input type="email" name="email" required placeholder="correo@empresa.cl"
+                                    class="w-full bg-coal border border-white/10 focus:border-rust text-white placeholder-white/20 px-4 py-3 text-md outline-none transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1.5">
+                                    Teléfono
+                                </label>
+
+                                <input type="tel" name="telefono" placeholder="+56 9 ..."
+                                    class="w-full bg-coal border border-white/10 focus:border-rust text-white placeholder-white/20 px-4 py-3 text-md outline-none transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- Servicio -->
+                        <div>
+                            <label class="block text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1.5">
+                                Tipo de servicio
+                            </label>
+
+                            <select name="servicio"
+                                class="w-full bg-coal border border-white/10 focus:border-rust text-white px-4 py-3 text-md outline-none transition-colors">
+                                <option>Fabricación de estructuras metálicas</option>
+                                <option>Mecanizado de piezas</option>
+                                <option>Reparación y recuperación</option>
+                                <option>Soldadura especializada</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div>
+                            <label class="block text-[11px] font-bold text-muted uppercase tracking-[1.5px] mb-1.5">
+                                Descripción del proyecto *
+                            </label>
+
+                            <textarea name="descripcion" required rows="4"
+                                placeholder="Materiales, dimensiones, cantidades o requerimientos especiales…"
+                                class="w-full bg-coal border border-white/10 focus:border-rust text-white placeholder-white/20 px-4 py-3 text-md outline-none transition-colors resize-y"></textarea>
+                        </div>
+
+                        <!-- Botón -->
+                        <button type="submit"
+                            class="w-full bg-rust hover:bg-rustd text-white font-bold text-base py-4 flex items-center justify-center gap-3 transition-colors cursor-pointer border-0">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Enviar solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+
+    <footer class="bg-white border-t-[3px] border-rust py-12 px-6">
+
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-8">
+
+            <!-- Logo y descripción -->
+            <div>
+
+                <a href="#inicio" class="inline-flex items-center no-underline mb-3">
+                    <img src="public/img/logo.png" alt="ADL Metal Maestranza — Rancagua" class="h-[48px] w-auto block">
+                </a>
+
+                <p class="text-black text-[14px]">
+                    © 2026 ADL Metal Maestranza Ltda. — Rancagua, Chile
+                </p>
+
+            </div>
+
+            <!-- Navegación -->
+            <div class="flex flex-wrap gap-6">
+
+                <a href="#servicios" class="text-black hover:text-muted text-[16px] no-underline transition-colors">
+                    Servicios
+                </a>
+
+                <a href="#nosotros" class="text-black hover:text-muted text-[16px] no-underline transition-colors">
+                    Nosotros
+                </a>
+
+                <a href="#productos" class="text-black hover:text-muted text-[16px] no-underline transition-colors">
+                    Trabajos
+                </a>
+
+                <a href="#contacto" class="text-black hover:text-muted text-[16px] no-underline transition-colors">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="src/scripts.js"></script>
+
+
+</body>
+
+</html>
